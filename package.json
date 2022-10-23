@@ -7,8 +7,8 @@
   "description": "api to return marvel characters",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "dev": "node src/uploadServer.js"
+    "start": "node ./src/server.js",
+    "dev": "node ./src/uploadServer.js"
   },
   "author": "Jocelino Fernandes",
   "license": "ISC",
