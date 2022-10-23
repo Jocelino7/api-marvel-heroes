@@ -1,6 +1,9 @@
 {
   "name": "api-marvel-heroes",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.17.1"
+  },
   "description": "api to return marvel characters",
   "main": "src/server.js",
   "scripts": {
