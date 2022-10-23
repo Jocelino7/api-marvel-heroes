@@ -1,5 +1,5 @@
 {
-  "name": "marvel-characters-api",
+  "name": "api-marvel-heroes",
   "version": "1.0.0",
   "description": "api to return marvel characters",
   "main": "src/server.js",
