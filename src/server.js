@@ -1,17 +1,12 @@
 //================ imports ===================
-const express = require("express");
-const bodyParser = require("body-parser");
 const db = require("./db/db")
-const app = express();
+const app = require("./uploadServer")
 const {ApolloServer} = require('apollo-server-express')
 const typeDefs = require("./schema/typeDef")
 const resolvers = require('./schema/resolvers')
-const port = process.env.PORT
+const port = process.env.PORT || 4000
 
 //================== ends imports ===================
-
-app.use(bodyParser.urlencoded({extended:true}))
-app.use(bodyParser.json())
 
 async function startServer(){
     const server = new ApolloServer({typeDefs,resolvers})

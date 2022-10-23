@@ -13,7 +13,6 @@ const express = require("express"),
 //==================== ends imports  =======================
 
 const app = express(),
-    port = process.env.PORT || 5000,
     upload = multer({ storage: storage, })
 
 app.use(bodyParser.json())
@@ -95,4 +94,4 @@ app.get("/upload/:image", (req, res) => {
 
 })
 
-app.listen(port, () => console.log("server running on port 5000"))
+module.exports = app
